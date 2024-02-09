@@ -1,0 +1,31 @@
+/* Colours:
+    "white": #FCFCFC
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.homeImage {
+    display: flex;
+
+    background-image: url(/homeImage.png);
+    background-size: cover;
+    background-position: center;
+
+    max-width: 100%;
+    max-height: 70vh;
+
+    width: auto;
+    height: 1080px;
+
+    font-family: "Jost", sans-serif, Arial;
+    font-size: 10rem;
+    
+    justify-content: center;
+    align-items: center;
+}
