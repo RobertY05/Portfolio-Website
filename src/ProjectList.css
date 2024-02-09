@@ -1,0 +1,17 @@
+.highlightedProject, .normalProject {
+    display: inline-flex;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.projectKeywords {
+    
+    font-size: 1rem;
+
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+
+    list-style-type: none;
+
+    display: inline-flex
+}

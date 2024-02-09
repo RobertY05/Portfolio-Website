@@ -21,20 +21,53 @@ export default function ProjectList() {
 
     const highlighted = data.map(project => {
         if (project.highlighted) {
-            console.log(project.image);
             return (
-                <div>
+                <div className="highlightedProject">
                     <img src={project.image} alt="Picture of a project" />
-                    <p>{project.name}</p>
-                    <p>{project.keywords}</p>
+                    <p className="projectName">{project.name}</p>
+                    <li className="projectKeywords">
+                        {project.keywords.map(word => {
+                            return (
+                                <ul>{word}</ul>
+                            )
+                        })}
+                    </li>
                 </div>
             );
         }
     });
 
+    const rest = data.map(project => {
+        if (!project.highlighted) {
+            return (
+                <div className="normalProject">
+                    <img src={project.image} alt="Picture of a project" />
+                    <p className="projectName">{project.name}</p>
+                    <li className="projectKeywords">
+                        {project.keywords.map(word => {
+                            return (
+                                <ul>{word}</ul>
+                            )
+                        })}
+                    </li>
+                </div>
+            )
+        }
+    });
+
     return (
         <div>
-            {highlighted}
+            <h2>I think these projects are pretty cool</h2>
+    
+            <div className="highlightedBox">
+                {highlighted}
+            </div>
+
+            <h2>These ones are cool as well if you want to look</h2>
+            
+            <div className="normalBox">
+                {rest}
+            </div>
         </div>
     );
 }
