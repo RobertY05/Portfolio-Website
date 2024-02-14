@@ -24,14 +24,25 @@ export default function ProjectList() {
             return (
                 <div className="highlightedProject">
                     <img src={project.image} alt="Picture of a project" />
-                    <p className="projectName">{project.name}</p>
-                    <li className="projectKeywords">
-                        {project.keywords.map(word => {
-                            return (
-                                <ul>{word}</ul>
-                            )
-                        })}
-                    </li>
+                    <div className="projectDescription">
+                        <div className="projectWords">
+                            <p className="projectName">{project.name}</p>
+                            <ul>
+                                {project.keywords.map(word => {
+                                    return (
+                                        <li className="projectKeyword">{word}</li>
+                                    )
+                                })}
+                            </ul>
+                        </div>
+                        <ul className="linkList">
+                            {project.links.map(link => {
+                                return (
+                                    <li><a className="projectLink" href={link[1]} target="_blank">{link[0]}</a></li>
+                                )
+                            })}
+                        </ul>
+                    </div>
                 </div>
             );
         }
@@ -42,14 +53,25 @@ export default function ProjectList() {
             return (
                 <div className="normalProject">
                     <img src={project.image} alt="Picture of a project" />
-                    <p className="projectName">{project.name}</p>
-                    <li className="projectKeywords">
-                        {project.keywords.map(word => {
-                            return (
-                                <ul>{word}</ul>
-                            )
-                        })}
-                    </li>
+                    <div className="projectDescription">
+                        <div className="projectWords">
+                            <p className="projectName">{project.name}</p>
+                            <ul>
+                                {project.keywords.map(word => {
+                                    return (
+                                        <li className="projectKeyword">{word}</li>
+                                    )
+                                })}
+                            </ul>
+                        </div>
+                        <ul className="linkList">
+                            {project.links.map(link => {
+                                return (
+                                    <li><a className="projectLink" href={link[1]} target="_blank">{link[0]}</a></li>
+                                )
+                            })}
+                        </ul>
+                    </div>
                 </div>
             )
         }
@@ -57,15 +79,15 @@ export default function ProjectList() {
 
     return (
         <div>
-            <h2>I think these projects are pretty cool</h2>
+            <h3>Highlighted Projects</h3>
     
-            <div className="highlightedBox">
+            <div className="projectBox">
                 {highlighted}
             </div>
 
-            <h2>These ones are cool as well if you want to look</h2>
+            <h3>Other Projects</h3>
             
-            <div className="normalBox">
+            <div className="projectBox">
                 {rest}
             </div>
         </div>

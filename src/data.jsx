@@ -14,6 +14,14 @@ var data = [
         "links": [["Github", "https://github.com/RobertY05/C-Tetris-Test"]],
         "highlighted": false,
         "score": 10
+    },
+    {
+        "name": "Rogue-Like Game",
+        "image": "/project3.png",
+        "keywords": ["Python", "Pygame"],
+        "links": [["Github", "https://github.com/RobertY05/Fishy-RogueLike"]],
+        "highlighted": true,
+        "score": 70
     }
 ]
 

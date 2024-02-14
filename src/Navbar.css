@@ -40,3 +40,12 @@ a, a:visited, a:hover, a:active {
     background-color: #aad0f0;
 }
 
+@media (max-width: 800px) {
+    .navbar {
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+}
