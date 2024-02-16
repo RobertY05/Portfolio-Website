@@ -8,10 +8,10 @@ var data = [
         "score": 90
     },
     {
-        "name": "Tetris in Monogame",
+        "name": "Portfolio Website",
         "image": "/project2.png",
-        "keywords": ["C#", "Monogame"],
-        "links": [["Github", "https://github.com/RobertY05/C-Tetris-Test"]],
+        "keywords": ["React", "HTML", "CSS"],
+        "links": [["Github", "https://github.com/RobertY05/Portfolio-Website"]],
         "highlighted": false,
         "score": 10
     },

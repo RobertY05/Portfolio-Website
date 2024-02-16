@@ -1,0 +1,32 @@
+.footerLinks {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    margin-bottom: 10px;
+}
+
+a.footerLink, a.footerLink:visited, a.footerLink:hover, a.footerLink:active {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #146ebd;
+    text-decoration: none;
+}
+
+.footerContainer {
+    padding-top: 100px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.copyright {
+    font-size: 0.8rem;
+    text-align: center;
+}
+

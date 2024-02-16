@@ -29,3 +29,88 @@
     justify-content: center;
     align-items: center;
 }
+
+h2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    display: flex;
+
+    max-width: 100%;
+    max-height: 20vh;
+
+    width: auto;
+    font-family: "Jost", sans-serif, Arial;
+    font-size: 2.5rem;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.mainBody {
+    display: flex;
+    justify-content: center;
+}
+
+p, a { 
+    font-family: "Helvetica", sans-serif, Arial;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+p {
+    max-width: 75ch;
+    margin-bottom: 1ch;
+}
+
+a, a:visited, a:hover, a:active {
+    color: #146ebd;
+    text-decoration: none;
+}
+
+.mainImage {
+    width: 100%;
+}
+
+figcaption {
+    font-family: "Helvetica", sans-serif, Arial;
+    font-size: 1rem;
+    font-weight: 400;
+    text-justify: center;
+}
+
+.imageContainer .textContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.imageContainer {
+    max-width: 300px;
+}
+
+.textContainer {
+    padding-left: 50px;
+    max-width: 500px;
+}
+
+@media (max-width: 800px) {
+    .homeImage {
+        display: flex;
+    
+        background-image: url(/homeImage.png);
+        background-size: cover;
+        background-position: center;
+    
+        max-width: 100%;
+        max-height: 70vh;
+    
+        width: auto;
+        height: 1080px;
+    
+        font-family: "Jost", sans-serif, Arial;
+        font-size: 5rem;
+        
+        justify-content: center;
+        align-items: center;
+    }
+}
